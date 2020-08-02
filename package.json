@@ -1,5 +1,5 @@
 {
-  "name": "duolingo-js",
+  "name": "duolingo-api-js",
   "version": "0.0.1",
   "description": "Unofficial Duolingo API for browser and nodejs",
   "main": "index.js",

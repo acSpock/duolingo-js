@@ -3,6 +3,8 @@ Unofficial Duolingo API for browser and nodejs. This repo is heavily inspired by
 
 I just started this wrapper for a side project. I will be updating the README and project  as I go.
 
+Make sure you use "type": "module" in your package.json
+
 ## Installation
 
 install with npm
@@ -14,7 +16,7 @@ npm install duolingo-js
 ## Usage
 
 ```javascript
-import Duolingo from "duolingo-js";
+import Duolingo from "duolingo-api-js";
 const duo = new Duolingo({userName:'acspock', password:'password'});
 
 duo.logIn()
