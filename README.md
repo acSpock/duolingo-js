@@ -10,7 +10,7 @@ Make sure you use "type": "module" in your package.json
 install with npm
 
 ```bash
-npm install duolingo-js
+npm install duolingo-api-js
 ```
 
 ## Usage
