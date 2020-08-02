@@ -26,7 +26,7 @@ class Duolingo {
         try{
             const result = await this.apiRequest('POST', URL, {login: this.userName, password: this.password});
             this.jwt = result.headers.jwt;
-            return result
+            return result.data;
         }catch(e){
             return e;
         }
