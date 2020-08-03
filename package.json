@@ -1,6 +1,6 @@
 {
   "name": "duolingo-api-js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Unofficial Duolingo API for browser and nodejs",
   "main": "index.js",
   "type": "module",
