@@ -11,5 +11,21 @@
   "license": "MIT",
   "dependencies": {
     "axios": "0.19.2"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/acSpock/duolingo-js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acSpock/duolingo-js.git"
+  },
+  "homepage": "https://github.com/acSpock/duolingo-js",
+  "keywords": [
+    "duolingo",
+    "duolingo api",
+    "duolingo js",
+    "duolingo node",
+    "duolingo wrapper",
+    "duolingo client"
+  ]
 }
