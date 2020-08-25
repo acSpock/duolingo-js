@@ -41,7 +41,8 @@ class Duolingo {
      */
     apiRequest (method, url, data, cb){
         let headers = {
-            "User-Agent": 'Mozilla/5.0'
+            "User-Agent": 'Mozilla/5.0',
+            "Authorization": null
         };
         if(this.jwt){
             headers['Authorization'] = 'Bearer ' + this.jwt;
@@ -134,8 +135,8 @@ class Duolingo {
     async getTranslations (words, source, target) {
         if(!source) source = this.userData.ui_language;
         if(!target) target = Object.keys(this.userData.language_data)[0]
-        words = JSON.stringify(words);
-        const URL = `https://d2.duolingo.com/api/1/dictionary/hints/${source}/${target}?tokens=${words}`
+        const encodedWords = encodeURIComponent(JSON.stringify(words));
+        const URL = `https://d2.duolingo.com/api/1/dictionary/hints/${source}/${target}?tokens=${encodedWords}`
         try{
             const result = await this.apiRequest('GET', URL);
             return result.data;
